@@ -432,3 +432,114 @@ li:first-child{
         display: flex;
     }
 }
+
+/* DESKTOP  */
+
+/* prima parte */
+@media screen and (min-width: 1200px){
+    .container{
+        max-width: 1200px;
+    }
+    .container-main{
+        max-width: 1200px;
+    }
+    .col-lg-40{
+        width: 40%;
+    }
+    .col-lg-60{
+        width: 60%;
+    }
+    .content-demo img{
+        width: 103%;
+    }
+    .content .d-block{
+        display: none;
+    }
+    .content .d-none{
+        display: block;
+    }
+    .content ul{
+        display: flex;
+    }
+    .content li{
+        margin: 0px 8px;
+    }
+    .content a{
+        text-decoration: none;
+        color: white;
+    }
+    .content .b-get-started{
+    padding: 5px;
+    font-size: 17px;
+    letter-spacing: 0px;
+    width: 100px;
+    color: black;
+    background-color: white;
+    }
+}
+
+/* parte planning  */
+@media screen and (min-width: 1200px){
+  .col-lg-50{
+    width: 50%;
+  }
+  .bg-img-planning{
+    width: 450px;
+    height: 400px;
+    margin-left: 100px;
+  }
+  #title-planning{
+    font-size: 30px;
+    margin-left: 100px;
+  }
+  #paragrph-planning{
+    font-size: 17px;
+    line-height: 30px;
+    padding-right: 90px;
+    margin-left: 100px;
+  }
+  .content-planning{
+    padding: 50px 40px;
+    margin: 250px 100px 50px 20px;
+  }
+  .content-planning img {
+    width: 60%;
+  }
+}
+/* parte testimonial  */
+
+@media screen and (min-width: 1200px){
+    .col-lg-25{
+        width: 25%;
+    }
+    .col-lg-75{
+        width: 75%;
+    }
+}
+/* parte benefits  */
+@media screen and (min-width: 1200px){
+    .col-lg-33{
+        width: calc(100% / 3);
+    }
+    
+}
+/* parte about us  */
+@media screen and (min-width: 1200px){
+    .content-about-us span{
+        position: absolute;
+        right: 220px;
+    }
+    .content-about-us h3{
+        padding-right: 150px;
+    }
+}
+/* parte get started  */
+@media screen and (min-width: 768px){
+    .content-get-started p{
+        padding: 0px 400px;
+        font-size: 15px;
+    }
+    .content-get-started h3{
+        font-size: 45px;
+    }
+}
