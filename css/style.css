@@ -7,6 +7,9 @@ body{
     font-family: 'PT sans', sans-serif;
     font-size: 20px;
 }
+html{
+    scroll-behavior: smooth;
+}
 header{
     background-color:rgb(0, 123, 255);
 }
@@ -18,7 +21,6 @@ footer{
     color: white;
     font-size: 15px;
 }
-
 /* classi di layout */
 .container{
     max-width: 430px;
@@ -91,8 +93,9 @@ footer{
     top: 50px ;
 }
 .absolute-r210{
-    position: absolute;
-    right: 210px;
+    position: relative;
+    right: 60px;
+    bottom: 130px;
 }
 .float-end{
     float: right;
@@ -204,7 +207,10 @@ header ul{
 .content-get-started ul{
     font-size: 15px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+}
+.content-get-started li{
+    margin: 0px 10px;
 }
 li:first-child{
     list-style: none;
@@ -414,10 +420,17 @@ li:first-child{
     }
     .content-about-us h3{
         padding-right: 0px;
+        position: relative;
+        bottom: 90px;
     }
     .content-about-us span{
-        position: absolute;
-        right: 50px;
+        position: relative;
+        left: 143px;
+        bottom: 215px;
+    }
+    .b-linkedin{
+        position: relative;
+        bottom: 90px;
     }
 }
 /* parte get started  */
@@ -526,15 +539,22 @@ li:first-child{
 /* parte about us  */
 @media screen and (min-width: 1200px){
     .content-about-us span{
-        position: absolute;
-        right: 220px;
+        position: relative;
+        bottom: 130px;
+        left: -60px;
     }
     .content-about-us h3{
         padding-right: 150px;
+        position: relative;
+        bottom: 0px;
+    }
+    .b-linkedin{
+        position: relative;
+        bottom: 0px;
     }
 }
 /* parte get started  */
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1200px){
     .content-get-started p{
         padding: 0px 400px;
         font-size: 15px;
